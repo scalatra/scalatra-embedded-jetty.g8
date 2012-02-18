@@ -1,13 +1,9 @@
 1. Launch [SBT](http://code.google.com/p/simple-build-tool).
 
-        ./sbt
+        sbt run
 
-2. Run Jetty
+2. Go to http://localhost:8080/.
 
-        container:start
+3. Learn more at http://www.scalatra.org/stable/book.
 
-3. Go to http://localhost:8080/.
-
-4. Learn more at http://www.scalatra.org/stable/book.
-
-5. Happy hacking!
+4. Happy hacking!

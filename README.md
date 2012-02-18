@@ -12,8 +12,7 @@ In a shell, run the following:
 
     g8 scalatra/scalatra-sbt
     cd <name-of-app>
-    sbt
-    > container:start
+    sbt run
     
 You should be able to browse to a [test resource](http://localhost:8080/)
 
