@@ -10,7 +10,7 @@ Install SBT 0.11.x - [Setup](https://github.com/harrah/xsbt/wiki/Setup) for more
 
 In a shell, run the following:
 
-    g8 scalatra/scalatra-sbt
+    g8 scalatra/scalatra-embedded-jetty
     cd <name-of-app>
     sbt run
     
