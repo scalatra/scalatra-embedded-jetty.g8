@@ -6,8 +6,6 @@ version := "$version$"
 
 scalaVersion := "$scala_version$"
 
-seq(webSettings :_*)
-
 libraryDependencies ++= Seq(
   "org.scalatra" % "scalatra" % "2.1.0-SNAPSHOT",
   "org.scalatra" % "scalatra-scalate" % "2.1.0-SNAPSHOT",
