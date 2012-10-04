@@ -17,11 +17,11 @@ object JettyMain {
     server setStopAtShutdown true
 
     val connector = new SelectChannelConnector
-    connector setPort 8080
+    connector setPort sys.env.get("PORT").map(_.toInt).getOrElse(8080)
     connector setMaxIdleTime 90000
     server addConnector connector
 
-    val webapp = "src/main/webapp"
+    val webapp = sys.env.get("PUBLIC") getOrElse "src/main/webapp"
     val webApp = new WebAppContext
     webApp setContextPath "/"
     webApp setResourceBase webapp
